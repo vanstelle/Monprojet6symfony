@@ -1,0 +1,9 @@
+<h1> Salut je suis {{ prenom }} {{ nom }} et je vous présente le trio choc des POUNGUEY</h1>
+
+<h3> Liste des POUNGUEY </h3>
+
+<ul>
+    {% for row in users %}
+        <li> {{row.prenom ~ ' ' ~ row.nom ~ ' âgée de ' ~ row.age ~ ' ans'}} </li>
+    {% endfor %}
+</ul>

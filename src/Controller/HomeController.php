@@ -10,7 +10,6 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class HomeController extends AbstractController
 {
-    #[Route('/', name: 'app_home')]
     public function index(ManagerRegistry $doctrine): Response
     {
      //on cherche le dernier article inseré en base de données en utilisant le repostory de la class Article (ArticleRepository)
